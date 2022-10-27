@@ -2,6 +2,6 @@ streamlit
 numpy
 pandas
 matplotlib==3.5.1
-PIL==22.0.3
+PIL==22.3
 sklearn.model_selection
 sklearn
