@@ -9,7 +9,7 @@ from sklearn.tree import DecisionTreeClassifier
 from sklearn.preprocessing import StandardScaler
 plt.style.use('seaborn')
 
-st.title('Online Education Data Analyses and Forecase')
+st.title('Online Education Data Analysis and Forecase')
 st.markdown('_by YHB & LN_')
 df = pd.read_csv('STATISTICAL_INFORMATION.csv')
 
