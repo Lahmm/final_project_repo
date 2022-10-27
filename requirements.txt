@@ -1,7 +1,10 @@
 streamlit
 numpy
 pandas
-matplotlib=3.5.1
-PIL
-sklearn.model_selection
-sklearn
+matplotlib==3.5.1
+Image
+train_test_split
+metrics
+DecisionTreeClassifier
+StandardScaler
+
