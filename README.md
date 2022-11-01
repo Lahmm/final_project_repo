@@ -5,6 +5,6 @@
 - Dataset link  
   [http://data-mining.philippe-fournier-viger.com/the-kddcup-2015-dataset-download-link/](http://data-mining.philippe-fournier-viger.com/the-kddcup-2015-dataset-download-link/)
 - Report   
-  [https://lahmm-final-project-repo-report-3rpmhq.streamlitapp.com/](https://lahmm-final-project-repo-report-3rpmhq.streamlitapp.com/)
+  [https://lahmm-final-project-repo-report-w5rxad.streamlitapp.com/](https://lahmm-final-project-repo-report-w5rxad.streamlitapp.com/)
 - PPT Slides   
   [PPT](FInal_project.pptx)
