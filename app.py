@@ -100,7 +100,7 @@ model=AdaBoostClassifier(base_estimator=base_model,n_estimators=50,learning_rate
 model.fit(x_train,y_train)
 
 
-st.header('3.Forecase:')
+st.header('3.Forecast:')
 
 col1, col2, col3 = st.columns(3)
 with col1:
