@@ -11,7 +11,7 @@ st.header('2. Introduction to the Dataset')
 st.subheader('2.1. Overview of the dataset')
 st.write('This dataset was obtained from the 2015 kddcup Data Mining competition. The experimental dataset size is a total of 10 files, respectively user_info.csv, log_train.csv, log_test.csv, course_info.csv, data.csv, object.csv, enrollment_test.csv, enrollment_train.csv, truth_test.csv, truth_train.csv. ')
 st.subheader('2.2. Relationship of the dataset')
-st.image('图片1.jpg')
+st.image('图片1.png')
 
 st.header('3. Experience Target')
 st.markdown('**1**. Make statistics on the distribution of overall user characteristics, such as age and education background distribution, to obtain the overall user characteristics of the platform.')

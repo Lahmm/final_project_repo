@@ -104,21 +104,21 @@ st.header('3.Forecase:')
 
 col1, col2, col3 = st.columns(3)
 with col1:
-    problem = st.slider('Input the number of the problem you worked:', 0.0, 1014.0, 0.0)
+    problem = st.slider('Input the number of the problem you worked:', 0.0, 113.0, 0.0)
     #st.write('Your problem number is :'+ round(int(problem)))
-    video = st.slider('Input the number of the video you watched:', 0.0, 536.0, 0.0)
+    video = st.slider('Input the number of the video you watched:', 0.0, 50.0, 0.0)
     #st.write('Your video number is :'+ round(video))
-    access = st.slider('Input the number of time you access in MOOC:', 0.0, 3660.0, 0.0)
+    access = st.slider('Input the number of time you access in MOOC:', 0.0, 189.0, 0.0)
     #st.write('Your access number is :'+ round(access))
 with col2:
-    wiki = st.slider('Input the number of times you\'ve looked up Wikipedia:', 0.0, 580.0, 0.0)
+    wiki = st.slider('Input the number of times you\'ve looked up Wikipedia:', 0.0, 12.0, 0.0)
     #st.write('Your wiki number is :'+ round(wiki))
-    discussion = st.slider('Input the number of time you discussed:', 0.0, 5300.0, 0.0)
+    discussion = st.slider('Input the number of time you discussed:', 0.0, 119.0, 0.0)
     #st.write('Your discussion number is :'+ round(discussion))
 with col3:
-    navigate = st.slider('Input the number of time you browse the rest of the course:', 0.0, 700.0, 0.0)
+    navigate = st.slider('Input the number of time you browse the rest of the course:', 0.0, 47.0, 0.0)
     #st.write('Your navigate number is :'+ round(navigate))
-    page_close = st.slider('Input the number of time you shut down web pages of MOOC:', 0.0, 550.0, 0.0)
+    page_close = st.slider('Input the number of time you shut down web pages of MOOC:', 0.0, 72.0, 0.0)
     #st.write('Your page-close number is :'+ round(page_close))
 
 
