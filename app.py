@@ -17,17 +17,6 @@ df = pd.read_csv('STATISTICAL_INFORMATION.csv')
 st.header('1.Data Display:')
 st.subheader('1.1.User Information:')
 
-# col1, col2, col3 = st.columns(3)
-# with col1:
-#     age_img = Image.open('age.png')
-#     st.image(age_img, caption='Stackplot of user\'s age')
-# with col3:    
-#     gender_img = Image.open('gender.png')
-#     st.image(gender_img, caption='Pie-Char of urser\'s gender')
-# with col2:    
-#     edu_img = Image.open('education.png')
-#     st.image(edu_img, caption='Histogram of ueser\'s education degree')
-
 option = st.selectbox(
     'Which information you want to check?',
     ('age', 'gender', 'education degree'))
@@ -75,32 +64,6 @@ fig, ax = plt.subplots(figsize=(20, 5))
 df[option].plot()
 st.pyplot(fig)
 
-
-st.header('3.Forecase:')
-
-col1, col2, col3 = st.columns(3)
-with col1:
-    problem = st.slider('Input the number of the problem you worked:', 0.0, 1014.0, 0.0)
-    #st.write('Your problem number is :'+ round(int(problem)))
-    video = st.slider('Input the number of the video you watched:', 0.0, 536.0, 0.0)
-    #st.write('Your video number is :'+ round(video))
-    access = st.slider('Input the number of time you access in MOOC:', 0.0, 3660.0, 0.0)
-    #st.write('Your access number is :'+ round(access))
-with col2:
-    wiki = st.slider('Input the number of times you\'ve looked up Wikipedia:', 0.0, 580.0, 0.0)
-    #st.write('Your wiki number is :'+ round(wiki))
-    discussion = st.slider('Input the number of time you discussed:', 0.0, 5300.0, 0.0)
-    #st.write('Your discussion number is :'+ round(discussion))
-with col3:
-    navigate = st.slider('Input the number of time you browse the rest of the course:', 0.0, 700.0, 0.0)
-    #st.write('Your navigate number is :'+ round(navigate))
-    page_close = st.slider('Input the number of time you shut down web pages of MOOC:', 0.0, 550.0, 0.0)
-    #st.write('Your page-close number is :'+ round(page_close))
-
-
-test = np.array([round(problem), round(video), round(access), round(wiki), round(discussion), round(navigate), round(page_close)])
-
-
 # Model test
 df = pd.read_csv('STATISTICAL_INFORMATION.csv')
 df["LABLE"]=df["LABLE"].astype("int")
@@ -135,6 +98,34 @@ model.fit(x_train,y_train); #训练
 base_model = DecisionTreeClassifier(criterion="entropy",max_depth=10)
 model=AdaBoostClassifier(base_estimator=base_model,n_estimators=50,learning_rate=0.5)
 model.fit(x_train,y_train)
+
+
+st.header('3.Forecase:')
+
+col1, col2, col3 = st.columns(3)
+with col1:
+    problem = st.slider('Input the number of the problem you worked:', 0.0, 1014.0, 0.0)
+    #st.write('Your problem number is :'+ round(int(problem)))
+    video = st.slider('Input the number of the video you watched:', 0.0, 536.0, 0.0)
+    #st.write('Your video number is :'+ round(video))
+    access = st.slider('Input the number of time you access in MOOC:', 0.0, 3660.0, 0.0)
+    #st.write('Your access number is :'+ round(access))
+with col2:
+    wiki = st.slider('Input the number of times you\'ve looked up Wikipedia:', 0.0, 580.0, 0.0)
+    #st.write('Your wiki number is :'+ round(wiki))
+    discussion = st.slider('Input the number of time you discussed:', 0.0, 5300.0, 0.0)
+    #st.write('Your discussion number is :'+ round(discussion))
+with col3:
+    navigate = st.slider('Input the number of time you browse the rest of the course:', 0.0, 700.0, 0.0)
+    #st.write('Your navigate number is :'+ round(navigate))
+    page_close = st.slider('Input the number of time you shut down web pages of MOOC:', 0.0, 550.0, 0.0)
+    #st.write('Your page-close number is :'+ round(page_close))
+
+
+test = np.array([round(problem), round(video), round(access), round(wiki), round(discussion), round(navigate), round(page_close)])
+
+
+
 
 if st.button('Submit'):
     test = (test - mean)/ std
