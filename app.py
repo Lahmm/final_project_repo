@@ -86,7 +86,7 @@ mean = np.delete(mean, -1)
 std = np.delete(std,0)
 std = np.delete(std,-1)
 
-x_train,x_test,y_train,y_test=train_test_split(X,Y);  #样本占比0.3 ,test_size=0.3
+x_train,x_test,y_train,y_test=train_test_split(X,Y,test_size=0.3);  #样本占比0.3 ,test_size=0.3
 model = DecisionTreeClassifier(criterion="entropy") #熵
 model.fit(x_train,y_train); #训练
 
