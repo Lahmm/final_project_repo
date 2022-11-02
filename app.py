@@ -10,7 +10,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.ensemble import AdaBoostClassifier
 plt.style.use('seaborn')
 
-st.title('Online Education Data Analyses and Forecase')
+st.title('Online Education Data Analyses and Forecast')
 st.markdown('_by YHB & LN_')
 df = pd.read_csv('STATISTICAL_INFORMATION.csv')
 
