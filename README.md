@@ -7,4 +7,6 @@
 - Report   
   [https://lahmm-final-project-repo-report-w5rxad.streamlitapp.com/](https://lahmm-final-project-repo-report-w5rxad.streamlitapp.com/)
 - PPT Slides   
-  [PPT](FInal_project.pptx)
+  [PPT](FInal_project.pptx)  
+- Report PDF  
+  [Report](MISY-report(GROUP-51))
