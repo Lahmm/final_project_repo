@@ -3,5 +3,5 @@ numpy
 pandas
 matplotlib==3.5.1
 Image
-sklearn
+scikit-learn
 
